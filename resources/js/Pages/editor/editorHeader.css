@@ -1,0 +1,44 @@
+/**
+ * Plugin styles
+ */
+.ai-header {
+  /*padding: 1rem 0;*/
+  /*margin-bottom: 0.3rem;*/
+  line-height: 1.5em;
+  outline: none;
+}
+
+.ce-header p,
+.ce-header div{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.cdx-settings-button {
+  color: #7B7B7B;
+  margin-top: 0px !important;
+  margin-left: 3px !important;
+}
+.cdx-settings-button--active {
+  color: #4E80EE;
+}
+/**
+ * Styles for Plugin icon in Toolbar
+ */
+.ce-header__icon {}
+
+.ce-header[contentEditable=true][data-placeholder]::before{
+  position: absolute;
+  content: attr(data-placeholder);
+  color: #707684;
+  font-weight: normal;
+  display: none;
+  cursor: text;
+}
+
+.ce-header[contentEditable=true][data-placeholder]:empty::before {
+  display: block;
+}
+
+.ce-header[contentEditable=true][data-placeholder]:empty:focus::before {
+  display: none;
+}
